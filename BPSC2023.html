@@ -20,6 +20,7 @@ body {
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow-x: auto; /* Added overflow-x property */
 }
 
 /* Link Styles */
@@ -33,15 +34,21 @@ a:hover {
 }
 
 /* Responsive Design */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 576px) {
   .container {
     padding: 15px;
   }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 360px) {
   .container {
     padding: 10px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .container {
+    padding: 5px;
   }
 }
 </style>
